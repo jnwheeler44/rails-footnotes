@@ -157,6 +157,7 @@ module Footnotes
           #footnotes_debug .name_values td {vertical-align: top;}
           #footnotes_debug legend {background-color: #fff;}
           #footnotes_debug fieldset {text-align: left; border: 1px dashed #aaa; padding: 0.5em 1em 1em 1em; margin: 1em 2em; color: #444; background-color: #FFF;}
+          @media print { #footnotes_debug { display: none; } }
           /* Aditional Stylesheets */
           #{@notes.map(&:stylesheet).compact.join("\n")}
         </style>
